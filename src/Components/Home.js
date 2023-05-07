@@ -11,10 +11,10 @@ import { faBasketballBall } from '@fortawesome/free-solid-svg-icons';
 
 function Home(){
     return(
-
+        <div>
         <nav>
             <div className="wrapper">
-            <h3 >gunadeshwar</h3>
+            <h3 className="logo"><div className="color">c</div> gunadeshwar</h3>
             <ul className="d-flex ">
                 
                 <li>Home</li>
@@ -23,6 +23,7 @@ function Home(){
                 <li>Projects</li>
             </ul>
             </div>
+            </nav>
             <div className="Titlecard">
                 <div className="box1">
                     <div className="big_box1">
@@ -61,10 +62,19 @@ function Home(){
                     </div>
                 </div>
                 <div className="box2">
-                    
+                <div className="big_box1">
+                        <div className="heading">
+                        Hey,I'm Abo,a product designer with 7 years of experince
+                        </div>
+                        <div className="small_box1">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        </div>
+
+                    </div>
                 </div>
             </div>
-        </nav>
+     
+         </div>
     );
 }
 
