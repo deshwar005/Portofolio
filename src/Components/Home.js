@@ -14,7 +14,7 @@ function Home(){
 
         <nav>
             <div className="wrapper">
-            <h3 >guna</h3>
+            <h3 >gunadeshwar</h3>
             <ul className="d-flex ">
                 
                 <li>Home</li>
