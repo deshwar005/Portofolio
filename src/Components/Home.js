@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faBasketballBall } from '@fortawesome/free-solid-svg-icons';
-
+import logo from '../Images/5484597.jpg'
 // use the icon
 
 
@@ -15,20 +15,20 @@ function Home(){
         <nav>
             <div className="wrapper">
             <h3 className="logo"><div className="color">c</div> gunadeshwar</h3>
-            <ul className="d-flex ">
+            {/* <ul className="d-flex ">
                 
                 <li>Home</li>
                 <li>About</li>
                 <li>Contact</li>
                 <li>Projects</li>
-            </ul>
+            </ul> */}
             </div>
             </nav>
             <div className="Titlecard">
                 <div className="box1">
                     <div className="big_box1">
                         <div className="heading">
-                        Hey,I'm Abo,a product designer with 7 years of experince
+                        Hey,I'm Deshwar,a Web Developer with Hands on experince
                         </div>
                         <div className="small_box1">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
@@ -43,13 +43,17 @@ function Home(){
 
                         
                         <div className="font_bg">
-                        <FontAwesomeIcon  icon={faInstagram} style={{ fontSize: '30px' }} />
+                            <a href="https://instagram.com/deshwar_sd?igshid=ZGUzMzM3NWJiOQ==">
+                            <FontAwesomeIcon  icon={faInstagram} style={{ fontSize: '30px' }} />
+                            </a>
+                        
                         </div>
                         <div className="font_bg">
                         <FontAwesomeIcon icon={faTwitter} style={{ fontSize: '30px' }} />
                         </div>
                         <div className="font_bg">
-                        <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: '30px' }} />
+                            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile">
+                        <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: '30px' }} /></a>
                         </div>
                         <div className="font_bg">
                         <FontAwesomeIcon icon={faBasketballBall} style={{ fontSize: '30px' }}/>
@@ -62,15 +66,12 @@ function Home(){
                     </div>
                 </div>
                 <div className="box2">
-                <div className="big_box1">
-                        <div className="heading">
-                        Hey,I'm Abo,a product designer with 7 years of experince
-                        </div>
-                        <div className="small_box1">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        </div>
+      
 
-                    </div>
+                        <img className="img-1" src={logo} alt="img1" />
+
+
+
                 </div>
             </div>
      
