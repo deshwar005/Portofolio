@@ -5,6 +5,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faBasketballBall } from '@fortawesome/free-solid-svg-icons';
 import logo from '../Images/5484597.jpg'
+import { Link } from "react-router-dom";
 // use the icon
 
 
@@ -14,14 +15,14 @@ function Home(){
         <div>
         <nav>
             <div className="wrapper">
+           
+            <ul className="d-flex ">
             <h3 className="logo"><div className="color">c</div> gunadeshwar</h3>
-            {/* <ul className="d-flex ">
-                
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
-                <li>Projects</li>
-            </ul> */}
+                <li> <Link className="links" to="/">Home</Link> </li>
+                <li> <Link className="links" to="/about">About</Link> </li>
+                <li><Link className="links" to="/contact">Contact</Link></li>
+                <li><Link className="links" to={"/projects"}>Projects</Link></li>
+            </ul>
             </div>
             </nav>
             <div className="Titlecard">
