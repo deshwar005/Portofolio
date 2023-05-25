@@ -6,6 +6,44 @@
     justify-content: flex-end;
     align-items: center;
 }
+.typing-animation {
+    display: inline-block;
+    overflow: hidden;
+    animation: typing 4s steps(40, end) infinite, blink-caret 0.75s step-end infinite;
+    white-space: nowrap;
+    border-right: 2px solid #000;
+    font-family: monospace;
+    font-size: 16px;
+  }
+  @media screen and (max-width: 768px) {
+    .typing-animation {
+      font-size: 4px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .typing-animation {
+      font-size: 2px;
+    }
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #F76B1C;
+    }
+  }
 .color{
     background-color: #F76B1C;
     border-radius: 50%;
@@ -30,11 +68,13 @@ li{
     justify-content: space-between;
 }
 .big_box1{
-
-    width: 75%;
-    text-align:start;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    /* width: 75%;
+    text-align:start; */
     margin-top: 6rem;
-    margin-left: 2rem;
 }
 .Titlecard{
     display: flex;
@@ -72,7 +112,10 @@ li{
     padding:4rem;
 }
 .small_box1{
-    text-align:start;
+    padding: 10px;
+    color: white;
+    font-weight: 500;
+    text-align:center;
     margin-top: 2rem;
     font-weight: 600;
     line-height: 20px;
@@ -150,6 +193,7 @@ button{
     }
 }
 .img-1{
+    transition: opacity 1s ease-in-out;
     width: 100%;
 }
 
