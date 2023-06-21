@@ -2,6 +2,8 @@ import React from 'react'
 import './Projects.css'
 import Projectui from './Projectui'
 import netfliximg from '../Images/download.jpg'
+import Portofolio from '../Images/Portofolio.png'
+import Movie from '../Images/Movie.png'
 import { Link } from "react-router-dom";
 function Projects() {
   const url_project ="https://netflix-clone580.netlify.app/";
@@ -23,6 +25,8 @@ function Projects() {
 
         
         <Projectui image={netfliximg} name={"Netflix"} url={url_project}/>
+        <Projectui image={Movie} name={"Movie"} url="https://deshmovies.netlify.app/"/>
+        <Projectui image={Portofolio} name={"Portofolio"} url="https://deshwar.netlify.app/"/>
         
 
 
